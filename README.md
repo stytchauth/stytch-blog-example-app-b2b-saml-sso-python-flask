@@ -1,4 +1,7 @@
-# Demo application using Stytch Authentication Provider
+# Integrating SAML Single Sign-On with Python, Okta, and Stytch
+This is a companion example app for the tutorial blog post - [Integrating SAML Single Sign-On with Python, Okta, and Stytch] (https://stytch.com/blog/integrating-saml-sso-with-python-okta-stytch). Read the blog post to get started and follow along. 
+
+## Getting started
 
 You need to make sure you have the following
 
