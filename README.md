@@ -10,41 +10,45 @@ You need to make sure you have the following
 - **Stytch Account**: Register with [Stytch for their B2B SaaS product](https://stytch.com/dashboard/start-now). **Make sure you register for the B2B SaaS Authentication product**.
 - **Node**: Node v20.10.0+ installed on your machine. You can install it by following the instructions from [their website](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-## Run the backend
+## Setup
+
+Copy `api/.env-TEMPLATE` to `api/.env` and set the following environment variables from the [Stytch Dashboard](https://stytch.com/dashboard/).
+
+- `STYTCH_PROJECT_ID`
+- `STYTCH_SECRET`
+- `STYTCH_PUBLIC_TOKEN`
+
+Copy `ui/.env-TEMPLATE` to `ui/.env` and set the following environment variables from the [Stytch Dashboard](https://stytch.com/dashboard/).
+
+- `VITE_STYTCH_PUBLIC_TOKEN`
+
+### Run the backend
 
 Start by installing the needed packages
 
 ```
+cd api
+python3 -m venv venv
+source venv/bin/activate
 pip3 install Flask flask-cors stytch requests
 ```
 
 Then run the backend with the following command :
 
 ```
-cd api
 python3 app.py
 ```
 
-## Run the frontend
+### Run the frontend
 
-Start by installing the needed packages
+Start by installing the needed packages:
 
 ```
 npm install
 ```
 
-Then run the frontend with the following command :
+Then run the frontend with the following command:
 
 ```
-npm start
+npm run dev
 ```
-
-## Demo Gifs
-
-- Using Magic Link
-
-![Singing in with Magic Link](https://i.imgur.com/bgwgACJ.gif)
-
-- Using SSO with Okta
-
-![SSO from Okta application](https://i.imgur.com/Q00ok25.gif)
