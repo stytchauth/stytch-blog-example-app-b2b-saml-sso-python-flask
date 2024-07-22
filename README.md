@@ -30,7 +30,7 @@ Start by installing the needed packages
 cd api
 python3 -m venv venv
 source venv/bin/activate
-pip3 install Flask flask-cors stytch requests
+pip3 install Flask flask-cors stytch requests python-dotenv
 ```
 
 Then run the backend with the following command :

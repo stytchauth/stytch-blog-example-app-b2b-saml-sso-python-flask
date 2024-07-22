@@ -3,18 +3,18 @@ import { Box, Typography, Grid } from "@mui/material";
 import { Card, CardContent, CardMedia } from "@mui/material";
 
 const ProductsList = () => {
-  const products = Array.from({ length: 100 }, (_, index) => ({
+  const products = Array.from({ length: 6 }, (_, index) => ({
     id: index + 1,
     name: `Product ${index + 1}`,
     description: `Description for Product ${index + 1}`,
     price: (10 + index).toFixed(2),
-    imageUrl: `https://via.placeholder.com/150?text=Product+${index + 1}`,
+    imageUrl: `/product-img.png`,
   }));
 
   return (
     <Box sx={{ mt: 4 }}>
       <Typography variant="h5" gutterBottom>
-        Products
+        Private Products List (Logged in view)
       </Typography>
       <Grid container spacing={2}>
         {products.map((product) => (
@@ -29,12 +29,6 @@ const ProductsList = () => {
               <CardContent>
                 <Typography gutterBottom variant="h6" component="div">
                   {product.name}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {product.description}
-                </Typography>
-                <Typography variant="body1" color="text.primary">
-                  Price: ${product.price}
                 </Typography>
               </CardContent>
             </Card>
