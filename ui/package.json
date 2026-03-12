@@ -14,7 +14,7 @@
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.16.4",
     "@stytch/react": "^18.1.0",
-    "@stytch/vanilla-js": "^4.13.3",
+    "@stytch/vanilla-js": "^4.18.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.25.1",
